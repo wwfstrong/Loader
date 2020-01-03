@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #403833;
+  user-select: none;
+}
+#box {
+  width: 800px;
+  height: 500px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+}
+a {
+  display: block;
+  float: left;
+  background-color: #13a3a5;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 10px 0px;
+}
+#rec {
+  position: absolute;
+  top: 170px;
+  left: 135px;
+  width: 530px;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0px 3px 2px rgba(55, 48, 44, 1) inset,
+    0px -3px 2px rgba(55, 48, 44, 1) inset,
+    1px 0px 2px rgba(55, 48, 44, 1) inset,
+    -1px 0px 2px rgba(55, 48, 44, 1) inset;
+}
+.c {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 36px;
+  position: absolute;
+  top: -60px;
+}
+.w1 {
+  background-color: #db2f00;
+  left: 20px;
+  animation: move 1.75s infinite;
+}
+.w2 {
+  background-color: #ff6d37;
+  left: 90px;
+  animation: move 1.75s infinite;
+  animation-delay: 0.1s;
+}
+.w3 {
+  background-color: #ffa489;
+  left: 160px;
+  animation: move 1.75s infinite;
+  animation-delay: 0.15s;
+}
+.w4 {
+  background-color: #f2f2f2;
+  left: 230px;
+  animation: move 1.75s infinite;
+  animation-delay: 0.2s;
+  color: gray;
+}
+.w5 {
+  background-color: #99d3d4;
+  left: 300px;
+  animation: move 1.75s infinite;
+  animation-delay: 0.25s;
+}
+.w6 {
+  background-color: #56bebf;
+  left: 370px;
+  animation: move 1.75s infinite;
+  animation-delay: 0.3s;
+}
+.w7 {
+  background-color: #13a3a5;
+  left: 440px;
+  animation: move 1.75s infinite;
+  animation-delay: 0.35s;
+}
+@keyframes move {
+  20% {
+    top: 95px;
+  }
+  40% {
+    top: 70px;
+  }
+  60%{
+    top: 70px;
+  }
+  90% {
+    top: 200px;
+  }
+  100% {
+    top: 200px;
+  }
+}

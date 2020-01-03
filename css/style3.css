@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #403833;
+  user-select: none;
+}
+#box {
+  width: 500px;
+  height: 500px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+}
+a {
+  display: block;
+  float: left;
+  background-color: #13a3a5;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 10px 0px;
+}
+.rec {
+  width: 220px;
+  height: 220px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 140px;
+  left: 140px;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+.line-row {
+  position: absolute;
+  width: 220px;
+  height: 8px;
+}
+.line-column {
+  position: absolute;
+  height: 220px;
+  width: 8px;
+}
+.top {
+  left: 220px;
+  background-color: #db2f00;
+  animation: top 1.5s infinite;
+}
+.bottom {
+  top: 212px;
+  left: -220px;
+  background-color: #db2f00;
+  z-index: 3;
+  animation: bottom 1.5s infinite;
+}
+.right {
+  background-color: #13a3a5;
+  z-index: 2;
+  left: 212px;
+  top: 220px;
+  animation: right 1.5s infinite;
+}
+.left {
+  background-color: #13a3a5;
+  z-index: 4;
+  top: -220px;
+  animation: left 1.5s infinite;
+}
+span{
+  display: block;
+  float: left;
+}
+span:nth-child(1){
+  animation: wwf 2s infinite;
+}
+span:nth-child(2){
+  animation: wwf 2s infinite;
+  animation-delay: 0.2s;
+}
+span:nth-child(3){
+  animation: wwf 2s infinite;
+  animation-delay: 0.4s;
+}
+span:nth-child(4){
+  animation: wwf 2s infinite;
+  animation-delay: 0.6s;
+}
+span:nth-child(5){
+  animation: wwf 2s infinite;
+  animation-delay: 0.8s;
+}
+span:nth-child(6){
+  animation: wwf 2s infinite;
+  animation-delay: 1s;
+}
+span:nth-child(7){
+  animation: wwf 2s infinite;
+  animation-delay: 1.2s;
+}
+@keyframes top {
+  100% {
+    left: -220px;
+  }
+}
+@keyframes bottom {
+  100% {
+    left: 220px;
+  }
+}
+@keyframes left {
+  100% {
+    top: 220px;
+  }
+}
+@keyframes right {
+  100% {
+    top: -220px;
+  }
+}
+@keyframes wwf {
+  50%{
+    transform: scale(1.5);
+  }
+}
+.text {
+  position: absolute;
+  top: 216px;
+  left: 130px;
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: bold;
+}
+span {
+  padding-left: 2px;
+  text-shadow: -2px 0px 2px rgba(169, 169, 169, 1),
+    0px 0px 2px rgba(169, 169, 169, 1), 0px 2px 2px rgba(169, 169, 169, 1),
+    0px 4px 2px rgba(169, 169, 169, 1);
+}

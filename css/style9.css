@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #403833;
+  user-select: none;
+}
+#box {
+  width: 1215px;
+  height: 500px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  line-height: 500px;
+}
+a {
+  display: block;
+  float: left;
+  background-color: #13a3a5;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 10px 0px;
+}
+.c {
+  float: left;
+  color: #8e8e8e;
+  font-size: 250px;
+  font-weight: bold;
+  text-shadow: 0px 10px 5px #a0a0a0, 2px 0px 5px #a0a0a0,
+    -2px 0px 5px #a0a0a0;
+  cursor: default;
+}
+.w1 {
+  animation: light 2s infinite;
+}
+.w2 {
+  animation: light 2s infinite;
+  animation-delay: 0.1s;
+}
+.w3 {
+  animation: light 2s infinite;
+  animation-delay: 0.2s;
+}
+.w4 {
+  animation: light 2s infinite;
+  animation-delay: 0.3s;
+}
+.w5 {
+  animation: light 2s infinite;
+  animation-delay: 0.4s;
+}
+.w6 {
+  animation: light 2s infinite;
+  animation-delay: 0.5s;
+}
+.w7 {
+  animation: light 2s infinite;
+  animation-delay: 0.6s;
+}
+@keyframes light {
+  50% {
+    color: #ffffff;
+  }
+}

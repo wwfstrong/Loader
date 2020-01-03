@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #403833;
+  user-select: none;
+}
+#box {
+  width: 800px;
+  height: 500px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+}
+a {
+  display: block;
+  float: left;
+  background-color: #13a3a5;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 10px 0px;
+}
+.c {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  line-height: 70px;
+  font-size: 36px;
+  margin-left: 40px;
+}
+.w1 {
+  top: 220px;
+  left: 50px;
+  background-color: #db2f00;
+  animation: move1 1.5s  infinite ease-in-out;
+}
+.w1::before,
+.w2::before,
+.w3::before,
+.w4::before,
+.w5::before,
+.w6::before,
+.w7::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #322b27;
+  top: 110px;
+  left: 10px;
+}
+.w2 {
+  top: 220px;
+  left: 140px;
+  background-color: #ff6d37;
+  animation: move2 1.5s  infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+ .w3 {
+  top: 220px;
+  left: 230px;
+  background-color: #ffa489;
+  animation: move2 1.5s  infinite ease-in-out;
+  animation-delay: 0.55s;
+}
+.w4 {
+  top: 220px;
+  left: 320px;
+  background-color: #f2f2f2;
+  color: gray;
+  animation: move2 1.5s infinite ease-in-out;
+  animation-delay: 0.6s;
+}
+.w5 {
+  top: 220px;
+  left: 410px;
+  background-color: #99d3d4;
+  animation: move2 1.5s infinite ease-in-out;
+  animation-delay: 0.65s;
+}
+.w6 {
+  top: 220px;
+  left: 500px;
+  background-color: #56bebf;
+  animation: move2 1.5s infinite ease-in-out;
+  animation-delay: 0.7s;
+}
+.w7 {
+  top: 220px;
+  left: 590px;
+  background-color: #13a3a5;
+  animation: move2 1.5s infinite ease-in-out;
+  animation-delay: 0.75s;
+} 
+@keyframes move1{
+  20%{
+    left: 50px;
+  }
+  30%{
+    left: 0px;
+  }
+  50%{
+    left: 120px;
+  }
+  70%{
+    left: 50px;
+  }
+}
+@keyframes move2{
+  30%{
+    transform: translateX(110px);
+  }
+  55%{
+    transform: translateX(0px);
+  }
+}

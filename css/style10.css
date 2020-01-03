@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #403833;
+  user-select: none;
+}
+#box {
+  width: 800px;
+  height: 500px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  overflow: hidden;
+}
+a {
+  display: block;
+  float: left;
+  background-color: #13a3a5;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 10px 0px;
+}
+.c {
+  float: left;
+  font-size: 50px;
+  color: #ffffff;
+  position: absolute;
+  top: 200px;
+  left: 800px;
+}
+#box div::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #39312d;
+  top: 70px;
+  left: 0px;
+}
+.w1 {
+  animation: move 2.05s infinite linear;
+}
+.w2 {
+  animation: move 2.05s infinite linear;
+  animation-delay: 0.2s;
+}
+.w3 {
+  animation: move 2.05s infinite linear;
+  animation-delay: 0.4s;
+}
+.w4 {
+  animation: move 2.05s infinite linear;
+  animation-delay: 0.6s;
+}
+.w5 {
+  left: 810px;
+  animation: move 2.05s infinite linear;
+  animation-delay: 0.8s;
+}
+.w6 {
+  animation: move 2.05s infinite linear;
+  animation-delay: 1s;
+}
+.w7 {
+  animation: move 2.05s infinite linear;
+  animation-delay: 1.2s;
+}
+.w8 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #d33003;
+  top: 220px;
+  animation: move 2.05s infinite linear;
+  animation-delay: 1.4s;
+}
+.w9 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e5e4e4;
+  top: 220px;
+  animation: move 2.05s infinite linear;
+  animation-delay: 1.6s;
+}
+.w10 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #227f7f;
+  top: 220px;
+  animation: move 2.05s infinite linear;
+  animation-delay: 1.8s;
+}
+#box .w8::after,
+#box .w9::after,
+#box .w10::after {
+  top: 50px;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0px) rotate(0deg) translateY(0px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(-300px) rotate(-360deg) translateY(20px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(-450px) rotate(-360deg) translateY(20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-840px) rotate(-720deg) translateY(0px);
+    opacity: 0;
+  }
+}
