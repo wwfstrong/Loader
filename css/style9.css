@@ -9,7 +9,7 @@ body {
 #box {
   width: 1215px;
   height: 500px;
-  top: 200px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
